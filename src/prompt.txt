@@ -1,0 +1,318 @@
+Use the following comprehensive master prompt to generate code for a complete **Failure Detection in Industrial Coolers and Refrigerators using IIoT + Machine Learning** system.
+
+This prompt is designed for ChatGPT / Copilot / Claude / Code Generator tools to create full production-style Python code.
+
+---
+
+# MASTER CODE GENERATION PROMPT
+
+## Project Title:
+
+**Failure Detection in Industrial Coolers and Refrigerators Using IIoT and Machine Learning**
+
+---
+
+## Objective:
+
+Write a complete Python project that simulates industrial refrigeration sensor data, processes it, detects anomalies, predicts failures, and visualizes results in dashboard format.
+
+---
+
+# INPUT PROMPT REQUIREMENTS
+
+Generate code for a system that performs the following:
+
+---
+
+## 1. Sensor Data Inputs
+
+Create dummy real-time sensor data for:
+
+### Primary Sensors:
+
+1. Temperature Sensor
+2. Pressure Sensor
+3. Vibration Sensor
+4. Current Sensor
+5. Humidity Sensor
+
+### Refrigeration Operational Parameters:
+
+6. Case Temperature
+7. Defrost Cycle Status
+8. Active Setpoint
+9. Control Temperature
+10. Alarm High Setpoint
+11. Alarm Low Setpoint
+
+---
+
+## 2. Data Generation Rules
+
+* Generate data every **5 minutes**
+* Duration: **10 days**
+* Multiple assets: minimum **20 refrigeration units**
+* Include:
+
+  * Normal operating values
+  * Warning conditions
+  * Failure patterns
+  * Random anomalies
+
+Example failures:
+
+* Compressor overheating
+* Gas leakage
+* Fan motor vibration abnormality
+* Sensor malfunction
+* Defrost failure
+
+---
+
+## 3. Data Storage
+
+Store generated data in:
+
+* CSV format
+* SQLite database
+
+Required tables:
+
+* sensor_data
+* anomaly_logs
+* failure_predictions
+
+---
+
+## 4. Preprocessing Module
+
+Write preprocessing code for:
+
+* Missing value handling
+* Noise filtering
+* Normalization
+* Timestamp formatting
+* Feature engineering
+
+Derived features:
+
+* Temp deviation
+* Pressure drift
+* Vibration spike ratio
+* Current overload index
+
+---
+
+## 5. Exploratory Data Analysis
+
+Generate:
+
+* Correlation heatmap
+* Sensor trend plots
+* Failure frequency charts
+* Boxplots for anomaly comparison
+
+Use:
+
+* matplotlib
+* seaborn
+* plotly
+
+---
+
+## 6. Machine Learning Models
+
+Implement:
+
+### A. Anomaly Detection:
+
+Use:
+
+* Isolation Forest
+
+Detect abnormal sensor behavior.
+
+---
+
+### B. Failure Prediction:
+
+Use:
+
+* LSTM model for time-series prediction
+
+Predict:
+
+* Upcoming equipment failure in next 6 hours
+
+---
+
+### C. Classification:
+
+Use:
+
+* Random Forest Classifier
+
+Classify failure types:
+
+1. Compressor Failure
+2. Cooling Failure
+3. Defrost Failure
+4. Electrical Failure
+
+---
+
+## 7. Model Evaluation
+
+Include:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* ROC Curve
+* Confusion Matrix
+
+---
+
+## 8. Alert System
+
+Create alert logic:
+
+If anomaly score exceeds threshold:
+
+* Raise warning alert
+
+If predicted failure probability > 80%:
+
+* Raise critical alert
+
+Output alerts in:
+
+* Console
+* CSV log file
+
+---
+
+## 9. Dashboard Interface
+
+Build Streamlit dashboard showing:
+
+### Live Panels:
+
+* Sensor live values
+* Failure probability meter
+* Active alerts
+* Unit status table
+
+### Charts:
+
+* Real-time trend graphs
+* Anomaly scatter plots
+* Failure prediction timeline
+
+---
+
+## 10. Folder Structure Required
+
+Generate project in this structure:
+
+```bash
+failure_detection_project/
+│
+├── data/
+│   ├── raw_sensor_data.csv
+│   ├── processed_data.csv
+│
+├── database/
+│   └── refrigeration.db
+│
+├── models/
+│   ├── isolation_forest.pkl
+│   ├── lstm_model.h5
+│   ├── random_forest.pkl
+│
+├── src/
+│   ├── data_generator.py
+│   ├── preprocessing.py
+│   ├── eda.py
+│   ├── anomaly_detection.py
+│   ├── failure_prediction.py
+│   ├── classification.py
+│   ├── alerts.py
+│   ├── dashboard.py
+│
+├── notebooks/
+│   └── analysis.ipynb
+│
+├── requirements.txt
+├── README.md
+└── main.py
+```
+
+---
+
+## 11. Libraries to Use
+
+Required Python libraries:
+
+```python
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scikit-learn
+tensorflow
+keras
+streamlit
+sqlite3
+joblib
+```
+
+---
+
+## 12. Expected Outputs
+
+System should generate:
+
+* Synthetic sensor dataset
+* Trained ML models
+* Failure predictions
+* Alert logs
+* Interactive dashboard
+
+---
+
+## 13. Advanced Optional Features
+
+If possible also include:
+
+* MQTT simulated sensor streaming
+* Kafka pipeline mock integration
+* Edge gateway simulation
+* REST API endpoint using Flask
+
+---
+
+## 14. Code Quality Requirements
+
+Write:
+
+* Modular code
+* Clean comments
+* Production-grade structure
+* Exception handling
+* Logging support
+
+---
+
+# FINAL COMMAND TO GENERATOR:
+
+**“Generate complete runnable Python source code for all files listed above.”**
+
+---
+
+This prompt can now be pasted directly into any AI code generator to create the full project.
+
+
+show how Refrigeration Operational Parameters  Correlation  with sensor data 
